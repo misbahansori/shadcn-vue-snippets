@@ -12,5 +12,208 @@
       "</Accordion>"
     ],
     "description": "Accordion"
+  },
+  "Alert": {
+    "prefix": "scn-alert",
+    "body": [
+      "<Alert>",
+      "  <AlertTitle>${1}</AlertTitle>",
+      "  <AlertDescription>",
+      "    ${2}",
+      "  </AlertDescription>",
+      "</Alert>",
+      ""
+    ],
+    "description": "Alert"
+  },
+  "Alert Dialog": {
+    "prefix": "scn-alert-dialog",
+    "body": [
+      "<AlertDialog>",
+      "  <AlertDialogTrigger>",
+      "    ${1}",
+      "  </AlertDialogTrigger>",
+      "  <AlertDialogContent>",
+      "    <AlertDialogHeader>",
+      "      <AlertDialogTitle>${2:Are you absolutely sure?}</AlertDialogTitle>",
+      "      <AlertDialogDescription>",
+      "        ${3:This action cannot be undone. This will permanently delete your account and remove your data from our servers.}",
+      "      </AlertDialogDescription>",
+      "    </AlertDialogHeader>",
+      "    <AlertDialogFooter>",
+      "      <AlertDialogCancel>${4:Cancel}</AlertDialogCancel>",
+      "      <AlertDialogAction>${5:Continue}</AlertDialogAction>",
+      "    </AlertDialogFooter>",
+      "  </AlertDialogContent>",
+      "</AlertDialog>"
+    ],
+    "description": "Alert Dialog"
+  },
+  "Aspect Ratio": {
+    "prefix": "scn-aspect-ratio",
+    "body": [
+      "<AspectRatio>",
+      "  ${1}",
+      "</AspectRatio>"
+    ],
+    "description": "Aspect Ratio"
+  },
+  "Avatar": {
+    "prefix": "scn-avatar",
+    "body": [
+      "<Avatar>",
+      "  <AvatarImage src=\"${1}\" />",
+      "  <AvatarFallback>${2}</AvatarFallback>",
+      "</Avatar>"
+    ],
+    "description": "Avatar"
+  },
+  "Badge": {
+    "prefix": "scn-badge",
+    "body": [
+      "<Badge${2}>",
+      "  ${1}",
+      "</Badge>"
+    ],
+    "description": "Badge"
+  },
+  "Button": {
+    "prefix": "scn-button",
+    "body": [
+      "<Button${2}>",
+      "  ${1}",
+      "</Button>"
+    ],
+    "description": "Button"
+  },
+  "Calendar": {
+    "prefix": "scn-calendar",
+    "body": [
+      "<Calendar ${1}/>"
+    ],
+    "description": "Calendar"
+  },
+  "Calendar": {
+    "prefix": "scn-calendar",
+    "body": [
+      "<Card>",
+      "  <CardHeader>",
+      "    <CardTitle>${1:Card Title}</CardTitle>",
+      "    <CardDescription>${2:Card Description}</CardDescription>",
+      "  </CardHeader>",
+      "  <CardContent> ",
+      "    ${3}",
+      "  </CardContent>",
+      "  <CardFooter>",
+      "    ${4}",
+      "  </CardFooter>",
+      "</Card>",
+    ],
+    "description": "Calendar"
+  },
+  "Carousel": {
+    "prefix": "scn-carousel",
+    "body": [
+      "<Carousel>",
+      "  <CarouselContent>",
+      "    <CarouselItem></CarouselItem>",
+      "    <CarouselItem></CarouselItem>",
+      "    <CarouselItem></CarouselItem>",
+      "  </CarouselContent>",
+      "  <CarouselPrevious />",
+      "  <CarouselNext />",
+      "</Carousel>",
+    ],
+    "description": "Carousel"
+  },
+  "Checkbox": {
+    "prefix": "scn-checkbox",
+    "body": [
+      "<Checkbox${1}/>"
+    ],
+    "description": "Checkbox"
+  },
+  "Collapsible": {
+    "prefix": "scn-collapsible",
+    "body": [
+      "<Collapsible${3}>",
+      "  <CollapsibleTrigger>",
+      "    ${1}",
+      "  </CollapsibleTrigger>",
+      "  <CollapsibleContent>",
+      "    ${2}",
+      "  </CollapsibleContent>",
+      "</Collapsible>",
+      ""
+    ],
+    "description": "Collapsible"
+  },
+  "Combobox": {
+    "prefix": "scn-combobox",
+    "body": [
+      "<Popover v-model:open=\"open\">",
+      "  <PopoverTrigger as-child>",
+      "    <button",
+      "      variant=\"outline\"",
+      "      role=\"combobox\"",
+      "      :aria-expanded=\"open\"",
+      "      class=\"w-[200px] justify-between\"",
+      "    >",
+      "      {{ value ? frameworks.find((framework) => framework.value === value)?.label : 'Select framework...' }}",
+      "      <ChevronsUpDown class=\"ml-2 h-4 w-4 shrink-0 opacity-50\" />",
+      "    </button>",
+      "  </PopoverTrigger>",
+      "  <PopoverContent class=\"w-[200px] p-0\">",
+      "    <command v-model=\"value\">",
+      "      <CommandInput placeholder=\"Search framework...\" />",
+      "      <CommandEmpty>No framework found.</CommandEmpty>",
+      "      <CommandList>",
+      "        <CommandGroup>",
+      "          <CommandItem",
+      "            v-for=\"framework in frameworks\"",
+      "            :key=\"framework.value\"",
+      "            :value=\"framework\"",
+      "            @select=\"open = false\"",
+      "          >",
+      "            <Check",
+      "              :class=\"cn(",
+      "                  'mr-2 h-4 w-4',",
+      "                  value === framework.value ? 'opacity-100' : 'opacity-0',",
+      "                )\"",
+      "            />",
+      "            {{ framework.label }}",
+      "          </CommandItem>",
+      "        </CommandGroup>",
+      "      </CommandList>",
+      "    </command>",
+      "  </PopoverContent>",
+      "</Popover>",
+      ""
+    ],
+    "description": "Combobox"
+  },
+  "Command": {
+    "prefix": "scn-command",
+    "body": [
+      "<command>",
+      "  <CommandInput placeholder=\"${1:Type something...}\" />",
+      "  <CommandList>",
+      "    <CommandEmpty>${2:No results found.}</CommandEmpty>",
+      "    <CommandGroup heading=\"Suggestions\">",
+      "      <CommandItem value=\"calendar\"> Calendar </CommandItem>",
+      "      <CommandItem value=\"search-emoji\"> Search Emoji </CommandItem>",
+      "      <CommandItem value=\"calculator\"> Calculator </CommandItem>",
+      "    </CommandGroup>",
+      "    <CommandSeparator />",
+      "    <CommandGroup heading=\"Settings\">",
+      "      <CommandItem value=\"profile\"> Profile </CommandItem>",
+      "      <CommandItem value=\"billing\"> Billing </CommandItem>",
+      "      <CommandItem value=\"settings\"> Settings </CommandItem>",
+      "    </CommandGroup>",
+      "  </CommandList>",
+      "</command>",
+      ""
+    ],
+    "description": "Command"
   }
 }
