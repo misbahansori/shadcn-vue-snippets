@@ -1,0 +1,16 @@
+{
+  "Accordion": {
+    "prefix": "scn-accordion",
+    "body": [
+      "<Accordion>",
+      "  <AccordionItem>",
+      "    <AccordionTrigger>${1}</AccordionTrigger>",
+      "    <AccordionContent>",
+      "      ${2}",
+      "    </AccordionContent>",
+      "  </AccordionItem>",
+      "</Accordion>"
+    ],
+    "description": "Accordion"
+  }
+}
