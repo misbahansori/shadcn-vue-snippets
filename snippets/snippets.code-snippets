@@ -215,5 +215,172 @@
       ""
     ],
     "description": "Command"
+  },
+  "Context Menu": {
+    "prefix": "scn-context-menu",
+    "body": [
+      "<ContextMenu>",
+      "  <ContextMenuTrigger>Right click</ContextMenuTrigger>",
+      "  <ContextMenuContent>",
+      "    <ContextMenuItem>Profile</ContextMenuItem>",
+      "    <ContextMenuItem>Billing</ContextMenuItem>",
+      "    <ContextMenuItem>Team</ContextMenuItem>",
+      "    <ContextMenuItem>Subscription</ContextMenuItem>",
+      "  </ContextMenuContent>",
+      "</ContextMenu>",
+      ""
+    ],
+    "description": "Context Menu"
+  },
+  "Datepicker": {
+    "prefix": "scn-datepicker",
+    "body": [
+      "<Popover>",
+      "  <PopoverTrigger as-child>",
+      "    <button",
+      "      :variant=\"'outline'\"",
+      "      :class=\"cn(",
+      "          'w-[280px] justify-start text-left font-normal',",
+      "          !date && 'text-muted-foreground',",
+      "        )\"",
+      "    >",
+      "      <CalendarIcon class=\"mr-2 h-4 w-4\" />",
+      "      <span>{{ date ? format(date, \"PPP\") : \"Pick a date\" }}</span>",
+      "    </button>",
+      "  </PopoverTrigger>",
+      "  <PopoverContent class=\"w-auto p-0\">",
+      "    <Calendar v-model=\"date\" />",
+      "  </PopoverContent>",
+      "</Popover>"
+    ],
+    "description": "Datepicker"
+  },
+  "Dialog": {
+    "prefix": "scn-dialog",
+    "body": [
+      "<dialog>",
+      "  <DialogTrigger> Edit Profile </DialogTrigger>",
+      "  <DialogContent>",
+      "    <DialogHeader>",
+      "      <DialogTitle>Edit profile</DialogTitle>",
+      "      <DialogDescription>",
+      "        Make changes to your profile here. Click save when you're done.",
+      "      </DialogDescription>",
+      "    </DialogHeader>",
+      "",
+      "    <DialogFooter> Save changes </DialogFooter>",
+      "  </DialogContent>",
+      "</dialog>",
+      ""
+    ],
+    "description": "Dialog"
+  },
+  "Dropdown Menu": {
+    "prefix": "scn-dropdown-menu",
+    "body": [
+      "<DropdownMenu>",
+      "  <DropdownMenuTrigger>Open</DropdownMenuTrigger>",
+      "  <DropdownMenuContent>",
+      "    <DropdownMenuLabel>My Account</DropdownMenuLabel>",
+      "    <DropdownMenuSeparator />",
+      "    <DropdownMenuItem>Profile</DropdownMenuItem>",
+      "    <DropdownMenuItem>Billing</DropdownMenuItem>",
+      "    <DropdownMenuItem>Team</DropdownMenuItem>",
+      "    <DropdownMenuItem>Subscription</DropdownMenuItem>",
+      "  </DropdownMenuContent>",
+      "</DropdownMenu>"
+    ],
+    "description": "Dropdown Menu"
+  },
+  "Hover Card": {
+    "prefix": "scn-hover-card",
+    "body": [
+      "<HoverCard>",
+      "  <HoverCardTrigger>Hover</HoverCardTrigger>",
+      "  <HoverCardContent>",
+      "    The Vue Framework – created and maintained by @vuejs.",
+      "  </HoverCardContent>",
+      "</HoverCard>"
+    ],
+    "description": "Hover Card"
+  },
+  "Menubar": {
+    "prefix": "scn-menubar",
+    "body": [
+      "<Menubar>",
+      "  <MenubarMenu>",
+      "    <MenubarTrigger>File</MenubarTrigger>",
+      "    <MenubarContent>",
+      "      <MenubarItem> New Tab <MenubarShortcut>⌘T</MenubarShortcut> </MenubarItem>",
+      "      <MenubarItem>New Window</MenubarItem>",
+      "      <MenubarSeparator />",
+      "      <MenubarItem>Share</MenubarItem>",
+      "      <MenubarSeparator />",
+      "      <MenubarItem>Print</MenubarItem>",
+      "    </MenubarContent>",
+      "  </MenubarMenu>",
+      "</Menubar>",
+      ""
+    ],
+    "description": "Menubar"
+  },
+  "Navigation Menu": {
+    "prefix": "scn-navigation-menu",
+    "body": [
+      "<NavigationMenu>",
+      "  <NavigationMenuList>",
+      "    <NavigationMenuItem>",
+      "      <NavigationMenuTrigger>Item One</NavigationMenuTrigger>",
+      "      <NavigationMenuContent>",
+      "        <NavigationMenuLink>Link</NavigationMenuLink>",
+      "      </NavigationMenuContent>",
+      "    </NavigationMenuItem>",
+      "  </NavigationMenuList>",
+      "</NavigationMenu>",
+      ""
+    ],
+    "description": "Navigation Menu"
+  },
+  "Pagination": {
+    "prefix": "scn-pagination",
+    "body": [
+      "<Pagination v-slot=\"{ page }\" :total=\"100\" :sibling-count=\"1\" show-edges :default-page=\"2\">",
+      "  <PaginationList v-slot=\"{ items }\" class=\"flex items-center gap-1\">",
+      "    <PaginationFirst />",
+      "    <PaginationPrev />",
+      "    <template v-for=\"(item, index) in items\">",
+      "      <PaginationListItem",
+      "        v-if=\"item.type === 'page'\"",
+      "        :key=\"index\"",
+      "        :value=\"item.value\"",
+      "        as-child",
+      "      >",
+      "        <button",
+      "          class=\"w-10 h-10 p-0\"",
+      "          :variant=\"item.value === page ? 'default' : 'outline'\"",
+      "        >",
+      "          {{ item.value }}",
+      "        </button>",
+      "      </PaginationListItem>",
+      "      <PaginationEllipsis v-else :key=\"item.type\" :index=\"index\" />",
+      "    </template>",
+      "    <PaginationNext />",
+      "    <PaginationLast />",
+      "  </PaginationList>",
+      "</Pagination>",
+      ""
+    ],
+    "description": "Pagination"
+  },
+  "Popover": {
+    "prefix": "scn-popover",
+    "body": [
+      "<Popover>",
+      "  <PopoverTrigger>${1}</PopoverTrigger>",
+      "  <PopoverContent>${2}</PopoverContent>",
+      "</Popover>",
+      ""
+    ],
+    "description": "Popover"
   }
 }
