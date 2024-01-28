@@ -1,65 +1,70 @@
-# shadcn-vue-snippets README
+# Shadcnui Snippet for Vue
 
-This is the README for your extension "shadcn-vue-snippets". After writing up a brief description, we recommend including the following sections.
+This package contains a collection of Shadcnui code snippets for Vue.
 
-## Features
+## installation
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+1. Open the extensions sidebar on Visual Studio Code
+2. Search for `shadcn-vue-snippets` 
+3. Install
+4. Restart Visual Studio Code
+5. Enjoy!
 
-For example if there is an image subfolder under your extension project workspace:
+## Supported languages (file extensions)
+- Vue (.vue)
 
-\!\[feature X\]\(images/feature-x.png\)
+## Snippets
+- scn-accordion - Accordion
+- scn-alert - Alert
+- scn-alert - Alert Dialog
+- scn-aspect - Aspect Ratio
+- scn-avatar - Avatar
+- scn-badge - Badge
+- scn-button - Button
+- scn-calendar - Calendar
+- scn-calendar - Calendar
+- scn-carousel - Carousel
+- scn-checkbox - Checkbox
+- scn-collapsible - Collapsible
+- scn-combobox - Combobox
+- scn-command - Command
+- scn-context - Context Menu
+- scn-datepicker - Datepicker
+- scn-dialog - Dialog
+- scn-dropdown - Dropdown Menu
+- scn-hover - Hover Card
+- scn-menubar - Menubar
+- scn-navigation - Navigation Menu
+- scn-pagination - Pagination
+- scn-popover - Popover
+- scn-radio - Radio Group
+- scn-select - Select
+- scn-separator - Separator
+- scn-sheet - Sheet
+- scn-skeleton - Skeleton
+- scn-slider - Slider
+- scn-switch - Switch
+- scn-table - Table
+- scn-tabs - Tabs
+- scn-textarea - Textarea
+- scn-toggle - Toggle
+- scn-toggle - Toggle Group
+- scn-tooltip - Tooltip
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+The following snippets are available for the form version of the components:
+- scn-form - Form Checkbox
+- scn-form - Form Calendar
+- scn-form - Form Input
+- scn-form - Form Radio
+- scn-form - Form Select
+- scn-form - Form Switch
+- scn-form - Form Textarea
+- scn-form - Form Combobox
 
-## Requirements
+## Extra
+PR are welcome!
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## License
+MIT
 
 **Enjoy!**
