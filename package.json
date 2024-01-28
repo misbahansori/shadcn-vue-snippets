@@ -10,6 +10,12 @@
   "categories": [
     "Snippets"
   ],
+  "icon": "shadcn-vue.png",
+  "author": {
+    "name": "Misbah Ansori",
+    "email": "misbah.ansori24@gmail.com",
+    "url": "https://github.com/misbahansori"
+},
   "repository": {
     "type": "git",
     "url": "https://github.com/misbahansori/shadcn-vue-snippets"
