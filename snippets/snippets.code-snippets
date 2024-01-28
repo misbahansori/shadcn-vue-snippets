@@ -418,4 +418,141 @@
     ],
     "description": "Select"
   },
+  "Separator": {
+    "prefix": "scn-separator",
+    "body": [
+      "<Separator />"
+    ],
+    "description": "Separator"
+  },
+  "Sheet": {
+    "prefix": "scn-sheet",
+    "body": [
+      "<Sheet>",
+      "  <SheetTrigger>Open</SheetTrigger>",
+      "  <SheetContent>",
+      "    <SheetHeader>",
+      "      <SheetTitle>Are you sure absolutely sure?</SheetTitle>",
+      "      <SheetDescription>",
+      "        This action cannot be undone. This will permanently delete your account",
+      "        and remove your data from our servers.",
+      "      </SheetDescription>",
+      "    </SheetHeader>",
+      "  </SheetContent>",
+      "</Sheet>",
+      ""
+    ],
+    "description": "Sheet"
+  },
+  "Skeleton": {
+    "prefix": "scn-skeleton",
+    "body": [
+      "<Skeleton class=\"w-[100px] h-[20px] rounded-full\" />"
+    ],
+    "description": "Skeleton"
+  },
+  "Slider": {
+    "prefix": "scn-slider",
+    "body": [
+      "<Slider :default-value=\"[33]\" :max=\"100\" :step=\"1\" />"
+    ],
+    "description": "Slider"
+  },
+  "Switch": {
+    "prefix": "scn-switch",
+    "body": [
+      "<Switch />"
+    ],
+    "description": "Switch"
+  },
+  "Table": {
+    "prefix": "scn-table",
+    "body": [
+      "<Table>",
+      "  <TableCaption>A list of your recent invoices.</TableCaption>",
+      "  <TableHeader>",
+      "    <TableRow>",
+      "      <TableHead class=\"w-[100px]\"> Invoice </TableHead>",
+      "      <TableHead>Status</TableHead>",
+      "      <TableHead>Method</TableHead>",
+      "      <TableHead class=\"text-right\"> Amount </TableHead>",
+      "    </TableRow>",
+      "  </TableHeader>",
+      "  <TableBody>",
+      "    <TableRow>",
+      "      <TableCell class=\"font-medium\"> INV001 </TableCell>",
+      "      <TableCell>Paid</TableCell>",
+      "      <TableCell>Credit Card</TableCell>",
+      "      <TableCell class=\"text-right\"> $250.00 </TableCell>",
+      "    </TableRow>",
+      "  </TableBody>",
+      "</Table>",
+      ""
+    ],
+    "description": "Table"
+  },
+  "Tabs": {
+    "prefix": "scn-tabs",
+    "body": [
+      "<Tabs default-value=\"account\" class=\"w-[400px]\">",
+      "  <TabsList>",
+      "    <TabsTrigger value=\"account\"> ",
+      "      Account",
+      "    </TabsTrigger>",
+      "    <TabsTrigger value=\"password\"> ",
+      "      Password",
+      "    </TabsTrigger>",
+      "  </TabsList>",
+      "  <TabsContent value=\"account\">",
+      "    Make changes to your account here.",
+      "  </TabsContent>",
+      "  <TabsContent value=\"password\"> ",
+      "    Change your password here. ",
+      "  </TabsContent>",
+      "</Tabs>",
+      ""
+    ],
+    "description": "Tabs"
+  },
+  "Textarea": {
+    "prefix": "scn-textarea",
+    "body": [
+      "<Textarea />"
+    ],
+    "description": "Textarea"
+  },
+  "Toggle": {
+    "prefix": "scn-toggle",
+    "body": [
+      "<Toggle>Toggle</Toggle>"
+    ],
+    "description": "Toggle"
+  },
+  "Toggle Group": {
+    "prefix": "scn-toggle-group",
+    "body": [
+      "<ToggleGroup type=\"single\">",
+      "  <ToggleGroupItem value=\"a\"> A </ToggleGroupItem>",
+      "  <ToggleGroupItem value=\"b\"> B </ToggleGroupItem>",
+      "  <ToggleGroupItem value=\"c\"> C </ToggleGroupItem>",
+      "</ToggleGroup>",
+      ""
+    ],
+    "description": "Toggle Group"
+  },
+  "Tooltip": {
+    "prefix": "scn-tooltip",
+    "body": [
+      "<Tooltip>",
+      "  <TooltipTrigger>",
+      "    ${1}",
+      "  </TooltipTrigger>",
+      "  <TooltipContent>",
+      "    ${2}",
+      "  </TooltipContent>",
+      "</Tooltip>",
+      ""
+    ],
+    "description": "Tooltip"
+  }
 }
