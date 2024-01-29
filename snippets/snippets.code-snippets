@@ -631,20 +631,19 @@
   "Form Input": {
     "prefix": "scn-form-input",
     "body": [
-      "<FormField v-slot=\"{ componentField }\" name=\"username\">",
+      "<FormField v-slot=\"{ componentField }\" name=\"${1:username}\">",
       "  <FormItem>",
-      "    <FormLabel>Username</FormLabel>",
+      "    <FormLabel>${2:Username}</FormLabel>",
       "    <FormControl>",
-      "      <input type=\"text\" placeholder=\"shadcn\" v-bind=\"componentField\" />",
+      "      <Input v-bind=\"componentField\" placeholder=\"${3:Enter username}\"/>",
       "    </FormControl>",
-      "    <FormDescription> This is your public display name. </FormDescription>",
+      "    <FormDescription>${4:This is your public display name.}</FormDescription>",
       "    <FormMessage />",
       "  </FormItem>",
-      "</FormField>",
-      ""
+      "</FormField>"
     ],
     "description": "Form Input"
-  },
+  }
   "Form Radio": {
     "prefix": "scn-form-radio",
     "body": [
