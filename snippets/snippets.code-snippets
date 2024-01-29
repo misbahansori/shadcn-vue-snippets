@@ -129,7 +129,7 @@
   "Checkbox": {
     "prefix": "scn-checkbox",
     "body": [
-      "<Checkbox${1}/>"
+      "<Checkbox ${2:id=\"${1:terms}\"} />"
     ],
     "description": "Checkbox"
   },
@@ -555,6 +555,21 @@
     ],
     "description": "Tooltip"
   },
+  "Form Checkbox Inline": {
+    "prefix": "scn-form-checkbox-inline",
+    "body": [
+      "<FormField v-slot=\"{ componentField }\" name=\"${1:remember}\">",
+      "  <FormItem class=\"flex flex-row items-center gap-2\">",
+      "    <FormControl>",
+      "      <Checkbox v-bind=\"componentField\" />",
+      "    </FormControl>",
+      "    <FormLabel class=\"mt-0\">${2:Remember me}</FormLabel>",
+      "  </FormItem>",
+      "</FormField>",
+      ""
+    ],
+    "description": "Form Checkbox Inline"
+  },
   "Form Checkbox": {
     "prefix": "scn-form-checkbox",
     "body": [
@@ -688,8 +703,7 @@
       "<FormField v-slot=\"{ componentField }\" name=\"email\">",
       "  <FormItem>",
       "    <FormLabel>Email</FormLabel>",
-      "",
-      "    <select v-bind=\"componentField\">",
+      "    <Select v-bind=\"componentField\">",
       "      <FormControl>",
       "        <SelectTrigger>",
       "          <SelectValue placeholder=\"Select a verified email to display\" />",
@@ -702,7 +716,7 @@
       "          <SelectItem value=\"m@support.com\"> m@support.com </SelectItem>",
       "        </SelectGroup>",
       "      </SelectContent>",
-      "    </select>",
+      "    </Select>",
       "    <FormDescription>",
       "      You can manage email addresses in your",
       "      <a href=\"/examples/forms\">email settings</a>.",
