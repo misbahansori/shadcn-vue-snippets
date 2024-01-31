@@ -93,8 +93,8 @@
     ],
     "description": "Calendar"
   },
-  "Calendar": {
-    "prefix": "scn-calendar",
+  "Card": {
+    "prefix": "scn-card",
     "body": [
       "<Card>",
       "  <CardHeader>",
@@ -109,7 +109,7 @@
       "  </CardFooter>",
       "</Card>",
     ],
-    "description": "Calendar"
+    "description": "Card"
   },
   "Carousel": {
     "prefix": "scn-carousel",
