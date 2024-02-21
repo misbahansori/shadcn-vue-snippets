@@ -3,7 +3,7 @@
   "publisher": "misbahansori",
   "displayName": "shadcn-vue-snippets",
   "description": "Snippets for shadcn-vue",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "engines": {
     "vscode": "^1.85.0"
   },
