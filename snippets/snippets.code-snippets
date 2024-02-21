@@ -403,7 +403,7 @@
   "Select": {
     "prefix": "scn-select",
     "body": [
-      "<select>",
+      "<Select>",
       "  <SelectTrigger>",
       "    <SelectValue placeholder=\"Select a fruit\" />",
       "  </SelectTrigger>",
@@ -413,7 +413,7 @@
       "      <SelectItem value=\"apple\"> Apple </SelectItem>",
       "    </SelectGroup>",
       "  </SelectContent>",
-      "</select>",
+      "</Select>",
       ""
     ],
     "description": "Select"
