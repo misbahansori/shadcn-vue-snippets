@@ -50,16 +50,17 @@ This package contains a collection of Shadcnui code snippets for Vue.
 - scn-toggle - Toggle
 - scn-toggle - Toggle Group
 - scn-tooltip - Tooltip
+- scn-drawer - Drawer
 
 The following snippets are available for the form version of the components:
-- scn-form - Form Checkbox
-- scn-form - Form Calendar
-- scn-form - Form Input
-- scn-form - Form Radio
-- scn-form - Form Select
-- scn-form - Form Switch
-- scn-form - Form Textarea
-- scn-form - Form Combobox
+- scn-form-checkbox - Form Checkbox
+- scn-form-calendar - Form Calendar
+- scn-form-input - Form Input
+- scn-form-radio - Form Radio
+- scn-form-select - Form Select
+- scn-form-switch - Form Switch
+- scn-form-textarea - Form Textarea
+- scn-form-combobox - Form Combobox
 
 ## Extra
 PR are welcome!
