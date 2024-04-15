@@ -658,7 +658,7 @@
       "</FormField>"
     ],
     "description": "Form Input"
-  }
+  },
   "Form Radio": {
     "prefix": "scn-form-radio",
     "body": [
@@ -783,7 +783,7 @@
       "  <FormItem>",
       "    <FormLabel>Bio</FormLabel>",
       "    <FormControl>",
-      "      <textarea",
+      "      <Textarea",
       "        placeholder=\"Tell us a little bit about yourself\"",
       "        class=\"resize-none\"",
       "        v-bind=\"componentField\"",
@@ -854,5 +854,27 @@
       ""
     ],
     "description": "Form Combobox"
+  },
+  "Drawer": {
+    "prefix": "scn-drawer",
+    "body": [
+      "<Drawer>",
+      "  <DrawerTrigger>Open</DrawerTrigger>",
+      "  <DrawerContent>",
+      "    <DrawerHeader>",
+      "      <DrawerTitle>Are you absolutely sure?</DrawerTitle>",
+      "      <DrawerDescription>This action cannot be undone.</DrawerDescription>",
+      "    </DrawerHeader>",
+      "    <DrawerFooter>",
+      "      <button>Submit</button>",
+      "      <DrawerClose>",
+      "        <Button variant=\"outline\">Cancel</Button>",
+      "      </DrawerClose>",
+      "    </DrawerFooter>",
+      "  </DrawerContent>",
+      "</Drawer>",
+      ""
+    ],
+    "description": "Drawer"
   }
 }
